@@ -15,12 +15,18 @@ paho-mqtt
 
 ###Install
 `git clone https://github.com/iamgyz/remote-system-control.git`
+
 `cd remote-system-control`
+
 For server
+
 `python3 server.py`
+
 For client
-`python3 client.py
+
+`python3 client.py`
 
 ###Configuration
 Setting up the broker ip, port and your own topic in both server.conf/client.conf
+
 The default broker will use 'iot.eclipse.org:1883' which is a public mqtt broker, you can use your own broker for the safety.
