@@ -61,10 +61,9 @@ class command_handler:
             server_status = tmp['status']
             server_cmd = tmp['cmd']
             print("[DEBUG] "+server_name+","+server_ip+","+server_status+","+server_cmd)
-            #self.run_cmd(server_cmd) 
+            self.run_cmd(server_cmd) 
         except:
              print("Not Json format!")
-        self.run_cmd(server_cmd)
     def run_cmd(self,cmd):
         child = subprocess.Popen([cmd],shell=True, stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
         try:
